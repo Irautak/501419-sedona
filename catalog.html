@@ -2,13 +2,14 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
     <title>HTML Academy: Седона</title>
   </head>
   <body>
       <header class='main-header'>
         <nav class='main-navigation'>
           <a class='main=header-logo'>
-            <img src='http://via.placeholder.com/150x150' alt='Логотип City of Sedona'>
+            <img src='img/index/Logo.png' alt='Логотип City of Sedona'>
           </a>
           <ul class='left-site-navigation'>
             <li><a class='mainRef' href=''>Информация</a></li>
@@ -23,50 +24,49 @@
 
       <main>
         <h1 class='visually-hidden'>Поиск</h1>
-        <section class='choice'>
-          <div class='choice-list'>
-            <h2>Инфраструктура:</h2>
+        <form action=" " method="post" class='choice' name='choice' oninput='cost-outputmax.value=cost-range.value' >
 
-            <ul>
-              <li>Бассейн</li>
-              <li>Парковка</li>
-              <li>Wi-fi</li>
-            </ul>
-          </div>
+          <fieldset class='choice-list'>
+            <legend class='catalog-h-white'>Инфраструктура:</legend>
 
-          <div class='choice-list'>
-            <h2>Тип жилья:</h2>
+              <label><input='checkbox' name='pool' checked> Бассейн</label>
+              <label><input='checkbox' name='parking'> Парковка</label>
+              <label><input='checkbox' name='wi-fi'> Wi-fi</label>
 
-            <ul>
-              <li>Гостиница</li>
-              <li>Мотель</li>
-              <li>Апартаменты</li>
-            </ul>
-          </div>
+          </fieldset>
 
-          <div class='cost'>
-            <h2>Стоимость в сутки(Р):</h2>
+          <fieldset class='choice-list'>
+            <legend class='catalog-h-white'>Тип жилья:</legend>
+
+              <label><input='checkbox' name='hotel' checked> Гостиница</label>
+              <label><input='checkbox' name='motel' checked> Мотель</label>
+              <label><input='checkbox' name='apartments' checked> Апартаменты</label>
+
+          </fieldset>
+
+          <fieldset class='cost'>
+            <legend class='catalog-h-white' >Стоимость в сутки(Р):</legend>
 
             <table class='cost-fromTo'>
               <tr>
                 <td>От 0</td>
-                <td>До 3000</td>
+                <td>До <output class='cost-outputmax' name='cost-outputmax'>3000</output></td>
               </tr>
             </table>
 
-            <input class='range' type="range" min="0" max="5000" step="1" value="50">
+            <input class='cost-range' name='range' type="range" min="0" max="5000" step="1" value="3000">
 
             <button class='catalog-choice-button'>
-              <span>Показать</span>
+              <span class='catalog-choice-button-text'>Показать</span>
             </button>
-          </div>
-        </section>
+          </fieldset>
+        </form>
 
         <div class='sort'>
           <b>Найдено: 3</b>
 
           <div class='sort-list'>
-            <h2>Сортировка:</h2>
+            <h2 class='sort-list-h2'>Сортировка:</h2>
             <ul>
               <li><button class='catalog-sort-list-button'>По цене</button></li>
               <li><button class='catalog-sort-list-button'>По типу</button></li>
@@ -75,14 +75,14 @@
           </div>
 
           <div class='sort-upDown'>
-            <button class='catalog-sort-upDown'><img src='http://via.placeholder.com/50x50'alt='up'></button>
-            <button class='catalog-sort-upDown'><img src='http://via.placeholder.com/50x50'alt='down'></button>
+            <button class='catalog-sort-upDown'><img src='/img/catalog/icon-up-dir.svg'alt='up'></button>
+            <button class='catalog-sort-upDown'><img src='/img/catalog/icon-down-dir.svg'alt='down'></button>
           </div>
         </div>
 
         <artice class='hotel'>
           <header class='hotel-header'>
-            <a class='hotel-header-image'  href=''><img src='http://via.placeholder.com/200x200' alt='.'></a>
+            <a class='hotel-header-image'  href=''><img src='/img/catalog/first-hotel.jpg' alt='.'></a>
           </header>
 
           <h1 class='hotel-name'>Amara Resort and SPA</h1>
@@ -96,14 +96,14 @@
           </section>
 
           <footer class='hotel-footer'>
-            <span class='hotel-footer-stars'><img src='http://via.placeholder.com/300x80' alt='stars'></span>
-            <span class='hotel-footer-rating'>Рейтинг:8,5</span>
+            <span class='hotel-footer-stars'></span>
+            <span class='hotel-footer-rating1'>Рейтинг:8,5</span>
           </footer>
         </article>
 
         <artice class='hotel'>
           <header class='hotel-header'>
-            <a class='hotel-header-image'  href=''><img src='http://via.placeholder.com/200x200' alt='.'></a>
+            <a class='hotel-header-image'  href=''><img src='/img/catalog/second-hotel.jpg' alt='.'></a>
           </header>
 
           <h1 class='hotel-name'>Desert Quail INN</h1>
@@ -117,14 +117,14 @@
           </section>
 
           <footer class='hotel-footer'>
-            <span class='hotel-footer-stars'><img src='http://via.placeholder.com/300x80' alt='stars'></span>
-            <span class='hotel-footer-rating'>Рейтинг:8,9</span>
+            <span class='hotel-footer-stars'></span>
+            <span class='hotel-footer-rating2'>Рейтинг:8,9</span>
           </footer>
         </article>
 
         <artice class='hotel'>
           <header class='hotel-header'>
-            <a class='hotel-header-image'  href=''><img src='http://via.placeholder.com/200x200' alt='.'></a>
+            <a class='hotel-header-image'  href=''><img src='/img/catalog/third-hotel.jpg' alt='.'></a>
           </header>
 
           <h1 class='hotel-name'>Villas at Poco Diablo</h1>
@@ -138,8 +138,8 @@
           </section>
 
           <footer class='hotel-footer'>
-            <span class='hotel-footer-stars'><img src='http://via.placeholder.com/300x80' alt='stars'></span>
-            <span class='hotel-footer-rating'>Рейтинг:9,2</span>
+            <span class='hotel-footer-stars'></span>
+            <span class='hotel-footer-rating3'>Рейтинг:9,2</span>
           </footer>
         </article>
 
@@ -149,12 +149,12 @@
         <p class='hashtag'>#VISITSEDONA</p>
 
         <ul class='refs'>
-          <li class='refs-item'><a><img src='http://via.placeholder.com/100x100' alt='Twitter'></a></li>
-          <li class='refs-item'><a><img src='http://via.placeholder.com/100x100' alt='Facebook'></a></li>
-          <li class='refs-item'><a><img src='http://via.placeholder.com/100x100' alt='Youtube'></a></li>
+          <li class='refs-item'><a><img src='img/footer/twitter.svg' alt='Twitter'></a></li>
+          <li class='refs-item'><a><img src='img/footer/facebook.svg' alt='Facebook'></a></li>
+          <li class='refs-item'><a><img src='img/footer/youtube.svg' alt='Youtube'></a></li>
         </ul>
 
-        <p class='copyright'><img src='' alt='Website by HTML Academy'>
+        <p class='copyright'><img src='img/footer/logo-htmlacademy.svg' alt='Website by HTML Academy'>
       </footer>
   </body>
 </html>
