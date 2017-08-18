@@ -9,19 +9,31 @@
   <div class='centering'>
     <header class='main-header'>
       <nav class='main-navigation'>
-        <a class='main=header-logo'>
-          <img src='img/index/Logo.png' alt='Логотип City of Sedona'>
-        </a>
-        <ul class='left-site-navigation'>
+        <ul class='site-navigation'>
           <li><a class='mainRef' href=''>Информация</a></li>
           <li><a class='mainRef' href=''>Фото и видео</a></li>
-        </ul>
-        <ul class='right-site-navigation'>
+          <li>
+          <a class='main=header-logo'>
+            <img src='img/header/Logo.png' alt='Логотип City of Sedona'>
+          </a>
+          </li>
           <li><a class='mainRef' href=''>Карта штата</a></li>
           <li><a class='mainRef' href=''>Гостиницы</a></li>
         </ul>
       </nav>
-    </header>
+
+      <div class='header-background'>
+        <img src='img/header/background_photo.jpg'>
+
+        <div class='header-background-text '>
+          <img src='img/header/Welcome.png'>
+          <img src='img/header/to_the_gorgeous.png'>
+          <img src='img/header/Sedona.png'>
+          <img src='img/header/Because_the Grand_Canyon_sucks.png'>
+        </div>
+      </div>
+
+      </header>
 
       <main class='container'>
         <h1 class='visually-hidden'>Седона</h1>
@@ -30,9 +42,9 @@
           <h2  class='advantages-h2'> Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
           <b class='advantages-fiveReasons'>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</b>
           <div class='advantages-row'>
+            <img class='big-image' src='img/index/first-reason.jpg' alt='Первое преимущество'>
             <div class='advantages-row-col'>
               <h3 class='h-white'>Настоящий городок</h3>
-              <img class='big-image' src='img/index/first-reason.jpg' alt='Первое преимущество'>
               <span class='number-white'> -№1-</span>
               <span class='desc-white'>Седона - не аттракцион для туристов, там течет своя жизнь</span>
             </div>
@@ -57,10 +69,12 @@
           </div>
 
           <div class='advantages-row'>
+            <img class='big-image' src='img/index/second-reason.jpg' alt='Второе преимущество'>
+            <div class='advantages-row-col'>
               <h3 class='h-white'>Там есть мост Дьявола</h3>
-              <img class='big-image' src='img/index/second-reason.jpg' alt='Второе преимущество'>
               <span class='number-white'> -№2-</span>
               <span class='desc-white'>Да, по нему можно пройти! Если, конечно, Вы осмелитесь</span>
+            </div>
           </div>
 
           <div class='advantages-row'>
@@ -87,14 +101,16 @@
 
         </section>
 
-        <section class='map'>
-          <h2 class='map-h'>Поиск гостиницы в Седоне</h2>
-          <p class='map-arrival'>Дата заезда:<input type='date'><a class='calendar'><img  src='img/index/calendar.svg' alt='.'></a><p>
-          <p class='map-departure'>Дата выезда:<input type='date'> <a class='calendar'> <img  src='img/index/calendar.svg' alt='.'></a><p>
-          <p class='map-counterAdult'>Взрослые:<input type='number'></p>
-          <p class='map-counterChild'>Дети:<input type='number'></p>
-          <a class='map-button'>Найти</a>
-        </section>
+        <form class='map'>
+          <fieldset>
+            <legend class='map-h'>Поиск гостиницы в Седоне</legend>
+            <label class='map-arrival'>Дата заезда:<input type='date'><a class='calendar'><img  src='img/index/calendar.svg' alt='.'></a></label>
+            <label class='map-departure'>Дата выезда:<input type='date'> <a class='calendar'> <img  src='img/index/calendar.svg' alt='.'></a></label>
+            <label class='map-counterAdult'>Взрослые:<input type='number'></label>
+            <label class='map-counterChild'>Дети:<input type='number'></label>
+            <button class='map-button'>Найти</button>
+          </fieldset>
+        </form>
       </main>
 
       <footer class='main-footer'>
