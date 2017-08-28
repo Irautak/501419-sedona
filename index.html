@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css"/>
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
     <title>HTML Academy: Седона</title>
   </head>
@@ -24,7 +25,7 @@
 
       <div class='header-content'>
 
-        <!-- Картинки задаются в CSS-->
+        <img src="img/header/headers.png" alt="">
 
       </div>
     </header>
@@ -37,7 +38,7 @@
       </div>
 
       <div class="advantages-row">
-        <div class="advantages-col">
+        <div class="advantages-col bluebg">
           <h3>Настоящий городок</h3>
           <p>-№1-</p>
           <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
@@ -63,13 +64,12 @@
 
       </div>
       <div class="advantages-row">
-        <div class="advantages-bg"></div> /* .66
-        <div class="advantages-col">
+        <div class="advantages-bg"></div>
+        <div class="advantages-col bluebg">
           <h3>Там есть мост Дьявола</h3>
           <p>-№2-</p>
           <p>Да, по нему можно пройти! Если, конечно, Вы осмелитесь</p>
-        </div>/* .33
-
+        </div>
       </div>
       <div class="advantages-row">
         <div class="advantages-col">
@@ -99,7 +99,7 @@
 
       <div class="map">
         <form class='form'>
-          <button>Поиск гостиницы в Седоне</button>
+          <button class='map-headBtn brownbg'>Поиск гостиницы в Седоне</button>
           <!--По нажатию кнопки появляется вся форма-->
           <fieldset>
           <div class='form-row'>
@@ -137,7 +137,7 @@
             </div>
 
           </div>
-          <button>
+          <button class='map-confirmBtn bluebg'>
               Найти
           </button>
 
@@ -154,9 +154,9 @@
 
       <div class='footer-center'>
         <ul class='refs'>
-          <li class='refs-item'><a  href='#'></a></li>
-          <li class='refs-item'><a  href='#'></a></li>
-          <li class='refs-item'><a  href='#'></a></li>
+          <li class='refs-item bluebg'><a href='#'></a></li>
+          <li class='refs-item bluebg'><a href='#'></a></li>
+          <li class='refs-item bluebg'><a href='#'></a></li>
         </ul>
       </div>
 
