@@ -9,6 +9,10 @@ body{
 
 }
 
+button, input, textarea {
+    font: inherit;
+}
+
  a{
 
   font-weight:bold;
@@ -16,8 +20,13 @@ body{
   color:black;
   cursor: pointer;
 }
+
+header, section, footer {
+    position: relative;
+}
 /****/
 .wrapper {
+    min-width: 768px;
     max-width: 1200px;
     margin: 0 auto;
     box-shadow: 0 0 15px rgba(0 ,0, 0, .2);
@@ -33,12 +42,35 @@ body{
 }
 
 .nav{
+    min-height: 70px;
+    display:flex;
     position: relative;
     padding: 0 6%;
     background-color: #fff;
 
 }
+.nav img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 138px;
+    margin: 0 auto;
+}
 
+.nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.nav li {
+    width: 20%;
+    padding: 17px 0;
+}
+.nav li:nth-child(3),
+.nav li:nth-child(4) {
+    text-align: right;
+}
 
 .header-content {
     position: relative;
@@ -53,25 +85,31 @@ body{
     bottom: 0;
     width: 100%;
     height: 57px;
-  background: url('../img/header/bg_after.svg') bottom no-repeat / contain;
+    background: url('../img/header/bg_after.svg') bottom no-repeat / contain;
 
 }
 
 /*****/
 
+.advantages-top{
+  padding-bottom: 58px;
+  padding-top: 60px;
 
+}
 .advantages-row{
-
   display: flex;
 }
 .advantages-bg{
 
-  width:66%;
+  width:66.67%;
 
 }
 .advantages-col{
-
-  width: 34%;
+  padding-top:50px;
+  padding-bottom: 65px;
+  padding-left: 59px;
+  padding-right:59px;
+  width: 33.33%;
 }
 .advantages-bg:first-child{
 
@@ -85,22 +123,38 @@ background-repeat: no-repeat;
   background-image: url('../img/index/second-reason.jpg');
 }
 
-#arrival a,#departure a{
+
+.form-icon{
+  display:inline-block;
+  width: 41px;
+  height: 38px;
+}
+.calendar{
 
   background-image: url('../img/index/calendar.svg');
   background-repeat: no-repeat;
+  background-position: bottom;
 }
 
-#adult a:first-child,#child a:first-child{
+.minus{
 
   background-image: url('../img/index/minus.png');
   background-repeat: no-repeat;
+  background-position: bottom;
 }
 
-#adult a:last-child,#child a:last-child{
+.plus{
 
   background-image: url('../img/index/plus.png');
   background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.footer{
+min-height: 120px;
+display:flex;
+justify-content:space-around;
+
 }
 
 
@@ -113,34 +167,25 @@ background-repeat: no-repeat;
 
 
 }
-.refs-item:first-child a {
+.refs-item:first-child  {
 
   background-image: url('../img/footer/twitter.svg');
+  background-position: center;
   background-repeat: no-repeat;
 }
-.refs-item:nth-child(2) a {
+.refs-item:nth-child(2)  {
 
   background-image: url('../img/footer/facebook.svg');
+  background-position: center;
   background-repeat: no-repeat;
 }
-.refs-item:last-child a{
+.refs-item:last-child {
 
   background-image: url('../img/footer/youtube.svg');
+  background-position: center;
   background-repeat: no-repeat;
 }
 
-.footer-right p {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 5px;
-}
-
-.footer-right a {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 8px;
-    text-decoration: none;
-}
 
 .bluebg{
   color: white;
@@ -152,6 +197,15 @@ background-repeat: no-repeat;
   background-color: #766357;
 }
 
+.greybg{
+  background-color: #eeeeee;
+}
+
+.form-row{
+
+  display:flex;
+  justify-content: center;
+}
 h2,.hashtag,.map-headBtn{
   line-height:1.2;
   font-size:21px;
@@ -189,9 +243,23 @@ h2,.hashtag,.map-headBtn{
   background-size: cover;
 }
 .c-header-content {
+  display: flex;
+  color:white;
+  justify-content: space-between;
 
-  color:white
 
+}
+.c-header-content-left{
+  display: flex;
+  flex-grow: 1;
+
+}
+.c-header-content-right{
+  align-self: : flex-end;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
 }
 
 .c-header-content h3{
@@ -204,12 +272,24 @@ h2,.hashtag,.map-headBtn{
 
   background-color: rgba(255, 0, 0, 0);
   border: 2px solid white;
+  color: white;
 
 }
 
+.c-hotels-top{
+
+  display: inline;
+
+}
 .c-hotels-top-sort{
   font-size:12px;
 
+}
+.c-hotels-top-sort,.c-hotels-top h3{
+  text-align: left;
+}
+.arrows{
+  text-align: right;
 }
 
 .c-hotels-top-button{
@@ -242,20 +322,82 @@ h2,.hashtag,.map-headBtn{
   color:#81b3d2;
 }
 
+
+.c-hotels-row{
+  position: relative;
+  display: flex;
+  padding:0 74px;
+  justify-content: space-between;
+
+}
+.c-hotels-row:nth-of-type(2),.c-hotels-row:last-of-type{
+  border-top:1px solid #e5e5e5;
+  border-bottom:1px solid #e5e5e5;
+
+}
+.c-row-left{
+
+    display: flex;
+}
+.c-left-notImg{
+
+  position: relative;
+
+}
+.c-left-notImg h2{
+  text-align: left;
+  position: relative;
+  top:5px;
+
+}
+.c-hotels-desc{
+
+  display: inline;
+}
+.c-hotels-desc p:first-child{
+  text-align: left;
+
+}
+.c-hotels-desc p:last-child{
+  text-align: right;
+  position: relative;
+  bottom: 35px;
+  right:77px;
+
+}
+
+.c-hotels-pic{
+    position: relative;
+    width: 135px;
+    height:90px;
+    top:31px;
+    margin-right:30px;
+
+}
+.c-hotels-buttons a{
+  position: relative;
+  padding: 8px 16px;
+  bottom: 39px;
+}
+.c-hotels-right{
+  position: relative;
+}
 .c-hotels-rating{
 
   background-color: #f2f2f2;
   color: #666666;
+  padding: 8px 16px;
+  position: absolute;
+  bottom:18px;
+  right:74px;
 
 }
-.c-hotels-row{
-
-  display: flex;
-
-}
-
 .c-hotels-stars a{
-
+  display: inline-block;
+  width:18px;
+  height:17px;
+  position: relative;
+  top:30px;
   background-image: url('../img/catalog/star.svg');
   background-repeat: no-repeat;
 
