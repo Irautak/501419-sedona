@@ -50,7 +50,7 @@ header, section, footer {
 }
 
 .nav{
-    min-height: 70px;
+    min-height: 56px;
     display:flex;
     justify-content: space-between;
     position: relative;
@@ -61,8 +61,7 @@ header, section, footer {
 .nav img {
     width: 138px;
     height: 70px;
-    margin-left: auto;
-    margin-right: auto;
+
 }
 
 .nav ul {
@@ -71,6 +70,7 @@ header, section, footer {
     list-style-type: none;
     padding: 0px;
     margin:0px;
+    width: 50% /* вот так он работает +ещё если проценты для li считать уже от этих 50%, а если ничего не ставить, то выглядит как на скриншоте моём*/
 }
 .nav .logo-wrapper{
 
@@ -79,15 +79,12 @@ header, section, footer {
 .nav li {
   margin-top: auto;
   margin-bottom: auto;
-
+  text-align: left;
+  width: 40%; /*Тут было 20%, всё съехало*/
 }
-.nav ul:nth-child(1) li:first-child{
-    margin-right: 148px;
 
-}
-.nav ul:nth-child(3) li:last-child{
-    margin-left:  148px;
-
+.nav ul:nth-of-type(2) li{
+    text-align: right;
 }
 .header-content {
     position: relative;
@@ -140,34 +137,54 @@ background-repeat: no-repeat;
   background-image: url('../img/index/second-reason.jpg');
 }
 
-.form fieldset{
-  background:url('../img/index/map.jpg') top / cover;
-
+.form label{
+  vertical-align: bottom;
+}
+.form-row:first-of-type{
+    margin-top: 55px;
+    margin-bottom: 29px;
+}
+.form-row:nth-of-type(2){
+  margin-bottom: 20px;
+}
+.form-row:nth-of-type(3){
+  margin-bottom: 55px;
+}
+.form-half *{
+  display: inline-block;
+}
+.form-number,.form-calendar-wrapper{
+  background-color: #f2f2f2;
+}
+.form-calendar-wrapper{
+  padding-left: 12px;
+  padding-top: 8px;
 }
 .form-icon{
   display:inline-block;
   width: 41px;
   height: 38px;
+  vertical-align: middle;
 }
 .calendar{
 
   background-image: url('../img/index/calendar.svg');
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center;
 }
 
 .minus{
 
   background-image: url('../img/index/minus.png');
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center;
 }
 
 .plus{
 
   background-image: url('../img/index/plus.png');
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center;
 }
 
 .footer{
@@ -183,31 +200,37 @@ background-repeat: no-repeat;
 }
 .footer .refs{
   padding-left: 0px;
+  list-style-type: none;
 }
-
 .refs-item{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0 3px;
 
+}
+.refs-item a{
     display: inline-block;
     width: 50px;
     height: 50px;
-    margin: 0 3px;
-    font-size: 0;
+
+
 
 
 }
-.refs-item:first-child  {
+.refs-item:first-child a  {
 
   background-image: url('../img/footer/twitter.svg');
   background-position: center;
   background-repeat: no-repeat;
 }
-.refs-item:nth-child(2)  {
+.refs-item:nth-child(2) a  {
 
   background-image: url('../img/footer/facebook.svg');
   background-position: center;
   background-repeat: no-repeat;
 }
-.refs-item:last-child {
+.refs-item:last-child a {
 
   background-image: url('../img/footer/youtube.svg');
   background-position: center;
@@ -421,6 +444,9 @@ h2,.hashtag,.map-headBtn{
   line-height: 1.3;
 
 }
+.c-header-content input[type='checkbox']{
+  display: none;
+}
 .catalog-label{
   display: block;
 }
@@ -432,7 +458,7 @@ h2,.hashtag,.map-headBtn{
   background-repeat: no-repeat;
   background-position: center;
 }
-label .catalog-checkbox + input[type='checkbox']:checked{
+input[type='checkbox']:checked ~ .catalog-checkbox{
   background-image: url('../img/catalog/checkbox-on.svg');
 }
 .c-header-content button{
@@ -470,6 +496,7 @@ label .catalog-checkbox + input[type='checkbox']:checked{
 .c-hotels-top ul li{
   display: inline-block;
 }
+
 .c-hotels-top-sort{
   display: inline-block;
   font-size:12px;
