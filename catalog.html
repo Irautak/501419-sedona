@@ -29,35 +29,40 @@
 
           <div class="c-header-infrastructure">
             <h3>Инфраструктура:</h3>
-            <ul>
-                <li><label for='pool'> Бассейн</label><input='checkbox' name='pool' id='pool' checked></li>
-                <li><label for='parking'> Парковка</label><input='checkbox' name='parking' id='parking'></li>
-                <li><label for='wi-fi'> Wi-fi</label><input='checkbox' name='wi-fi' id='wi-fi'></li>
-            </ul>
+              <input='checkbox' name='infr' id='pool' value='pool' checked><label class='catalog-label' for='pool'><span class="catalog-checkbox"></span> Бассейн</label>
+              <input='checkbox' name='infr2' id='parking' value='parking'><label class='catalog-label' for='parking'><span class="catalog-checkbox"></span> Парковка</label>
+              <input='checkbox' name='infr3' id='wi-fi' value='wi-fi'><label class='catalog-label' for='wi-fi'><span class="catalog-checkbox"></span> Wi-fi</label>
           </div>
 
           <div class="c-header-house">
 
             <h3>Тип жилья:</h3>
-            <ul>
-                <li><label for="hotel"> Гостиница</label><input='checkbox' name='hotel' id='hotel' checked></li>
-                <li><label for="motel"> Мотель</label><input='checkbox' name='motel' id='motel' checked></li>
-                <li><label for="apartments"> Апартаменты</label><input='checkbox' name='apartments' id='apartments' checked></li>
-            </ul>
-
+              <input='checkbox' name='house' id='hotel' value='hotel' checked ><label class='catalog-label' for="hotel"><span class="catalog-checkbox"></span> Гостиница</label>
+              <input='checkbox' name='house2' id='motel' value='motel' checked ><label class='catalog-label' for="motel"><span class="catalog-checkbox"></span> Мотель</label>
+              <input='checkbox' name='house3' id='apartments' value='apartments' checked><label class='catalog-label' for="apartments"><span class="catalog-checkbox"></span> Апартаменты</label>
           </div>
 
           </fieldset>
 
-        <fieldset class="c-header-content-right">
+        <fieldset class='c-header-content-right'>
             <h3>Стоимость в сутки(Р):</h3>
-            <div class='c-header-content-costFromTo'>
-            <!-- Тут будет показываться стоимость от и до -->
+            <div class='price-controls'>
+                <label class='min-price'>от <input type='text' name='min-price' value='0'></label>
+                <label class='max-price'>до <input type='text' name='max-price' value='3000'></label>
+            </div>
+            <div class='range-controls'>
+                <div class='scale'>
+                    <div class='bar'> </div>
+                </div>
+                <div class="range-toggle range-toggle-min">
+
+                </div>
+                <div class="range-toggle range-toggle-max">
+
+                </div>
             </div>
 
-            <input type="range">
-
-            <button>Показать</button>
+            <button class='c-right-btn' type='submit'>Показать</button>
 
         </fieldset>
 
@@ -69,15 +74,17 @@
 
     <section class='c-hotels'>
       <div class="c-hotels-top">
-        <h3>Найдено:3</h3>
+        <div class='c-hotels-top-wrapper'>
+          <h3>Найдено:3</h3>
 
-        <div class="c-hotels-top-sort">
-          <h4>Сортировка:</h4>
-          <ul>
-            <li><button class='c-hotels-top-button'>По цене</button></li>
-            <li><button class='c-hotels-top-button'>По типу</button></li>
-            <li><button class='c-hotels-top-button'>По рейтингу</button></li>
-          </ul>
+          <div class="c-hotels-top-sort">
+            <h4>Сортировка:</h4>
+            <ul>
+              <li><button class='c-hotels-top-button'>По цене</button></li>
+              <li><button class='c-hotels-top-button'>По типу</button></li>
+              <li><button class='c-hotels-top-button'>По рейтингу</button></li>
+            </ul>
+          </div>
         </div>
 
         <div class="arrows">
@@ -97,14 +104,16 @@
           </div>
           <div class='c-left-notImg'>
           <h2>Amara Resort and SPA</h2>
-          <div class="c-hotels-desc">
-            <p>Гостиница</p>
-            <p>От 3500 Р.</p>
+          <div class='c-hotels-desc'>
+              <div class="c-hotels-more">
+                <p class='catalog-desc'>Гостиница</p>
+                <a class='bluebg catalog-button' href="#">Подробнее</a>
+              </div>
+              <div class="c-hotels-reserve">
+                <p class='catalog-desc'>От 3500 Р.</p>
+                <a class='brownbg catalog-button' href="#">Забронировать</a>
           </div>
-          <div class="c-hotels-buttons">
-            <a class='bluebg' href="#">Подробнее</a>
-            <a class='brownbg' href="#">Забронировать</a>
-          </div>
+        </div>
           </div>
         </div>
         <div class="c-row-right">
@@ -126,13 +135,15 @@
           </div>
           <div class='c-left-notImg'>
           <h2>Desert Quail INN</h2>
-          <div class="c-hotels-desc">
-            <p>Мотель</p>
-            <p>От 2000 Р</p>
-          </div>
-          <div class="c-hotels-buttons">
-            <a class='bluebg' href="#">Подробнее</a>
-            <a class='brownbg' href="#">Забронировать</a>
+          <div class='c-hotels-desc'>
+              <div class="c-hotels-more">
+                <p class='catalog-desc'>Мотель</p>
+                <a class='bluebg catalog-button' href="#">Подробнее</a>
+              </div>
+              <div class="c-hotels-reserve">
+                <p class='catalog-desc'>От 2000 Р.</p>
+                <a class='brownbg catalog-button' href="#">Забронировать</a>
+              </div>
           </div>
           </div>
         </div>
@@ -155,13 +166,15 @@
           </div>
           <div class='c-left-notImg'>
           <h2>Villas at Poco Diablo</h2>
-          <div class="c-hotels-desc">
-            <p>Апартаменты</p>
-            <p>От 4000 Р.</p>
-          </div>
-          <div class="c-hotels-buttons">
-            <a class='bluebg' href="#">Подробнее</a>
-            <a class='brownbg' href="#">Забронировать</a>
+          <div class='c-hotels-desc'>
+              <div class="c-hotels-more">
+                <p class='catalog-desc'>Апартаменты</p>
+                <a class='bluebg catalog-button' href="#">Подробнее</a>
+              </div>
+              <div class="c-hotels-reserve">
+                <p class='catalog-desc'>От 4000 Р.</p>
+                <a class='brownbg catalog-button' href="#">Забронировать</a>
+              </div>
           </div>
         </div>
         </div>
