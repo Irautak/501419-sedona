@@ -136,12 +136,40 @@ background-repeat: no-repeat;
 
   background-image: url('../img/index/second-reason.jpg');
 }
+.map{
+  background: url('../img/index/map.jpg') top / cover
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  width:568px;
+  height:395px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form fieldset{
+  width:100%;
+  padding: 55px 0px;
+  border: none;
+  background-color: white;
 
+}
 .form label{
   vertical-align: bottom;
 }
+.map-headBtn{
+  padding: 31px 0px;
+  border: none;
+}
+.map-confirmBtn{
+  padding: 17px 201px;
+  border: none;
+  font-size: 21px;
+  line-height:1.2;
+  font-weight: bold;
+}
 .form-row:first-of-type{
-    margin-top: 55px;
+
     margin-bottom: 29px;
 }
 .form-row:nth-of-type(2){
