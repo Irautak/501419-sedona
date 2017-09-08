@@ -7,7 +7,7 @@ html{
 }
 
 body{
-  font-family: 'PT Sans';
+  font-family: 'PT Sans','Arial', sans-serif;
   line-height: 1.5;
   font-size: 14px;
   background-color: #f2f2f2;
@@ -25,6 +25,7 @@ a{
   color:black;
   cursor: pointer;
 }
+
 button{
   cursor: pointer;
 }
@@ -92,7 +93,7 @@ header, section, footer {
 }
 
 .header::after{
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: 0;
@@ -380,9 +381,14 @@ h2,.hashtag,.map-headBtn{
 }
 
 .c-header-content{
-  color:white;
-  padding: 0% 6%;
   display: flex;
+  padding: 0% 6%;
+  color:white;
+}
+.c-header-content fieldset{
+  padding: 0px;
+  margin: 0px;
+  border: none;
 }
 
 .c-header-content-left{
@@ -415,7 +421,7 @@ h2,.hashtag,.map-headBtn{
   border-radius: 2px;
 }
 .price-controls::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 50%;
   left: 50%;
@@ -554,7 +560,6 @@ input[type='checkbox']:checked ~ .catalog-checkbox{
   padding: 0% 6%;
 }
 
-
 .c-hotels-top h3{
   display: inline-block;
   vertical-align: middle;
@@ -588,6 +593,11 @@ input[type='checkbox']:checked ~ .catalog-checkbox{
   height:15px;
   vertical-align: top;
   margin-top:23px;
+  color: #cacaca;
+}
+
+.arrows a:active{
+  color: #81b3d2;
 }
 
 .arrows a:first-child{
