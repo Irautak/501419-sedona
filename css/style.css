@@ -50,10 +50,10 @@ header, section, footer {
 }
 
 .nav{
-  min-height: 56px;
   display:flex;
   justify-content: space-between;
   position: relative;
+  max-height: 56px;
   padding: 0 6%;
   background-color: #fff;
 }
@@ -188,6 +188,7 @@ header, section, footer {
 
 .map-headBtn{
   width: 568px;
+  text-transform: uppercase;
   padding: 31px 0px;
   margin-left: auto;
   margin-right: auto;
@@ -198,6 +199,7 @@ header, section, footer {
   font-size: 21px;
   line-height:1.2;
   font-weight: bold;
+  text-transform: uppercase;
   padding: 17px 201px;
   border: none;
 }
@@ -419,12 +421,9 @@ h2,.hashtag,.map-headBtn{
 }
 
 .c-header-content-left{
+  position: relative;
   width: 67%;
   display: flex;
-}
-
-.c-header-content-left div{
-  text-align: left;
 }
 
 .catalog-label{
@@ -432,7 +431,18 @@ h2,.hashtag,.map-headBtn{
 }
 
 .c-header-infrastructure{
-  margin-right: 19%
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.c-header-house{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top:0px;
+  left: 265px;
+  text-align: left;
 }
 
 .c-header-content-right{
@@ -541,10 +551,7 @@ h2,.hashtag,.map-headBtn{
   background: #ffffff;
 }
 
-.c-header-content-left div{
-  display: flex;
-  flex-direction: column;
-}
+
 
 .c-header-content h3{
   font-size:16px;
