@@ -10,9 +10,10 @@ body{
   font-family: 'PT Sans','Arial', sans-serif;
   line-height: 1.5;
   font-size: 14px;
-  background-color: #f2f2f2;
   text-transform: uppercase;
   text-align: center;
+  background-color: #f2f2f2;
+
 }
 
 button, input, textarea {
@@ -102,6 +103,16 @@ header, section, footer {
   background: url('../img/header/bg_after.png');
   z-index: 100;
 }
+.advantages-top h2{
+  max-width: 443px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.advantages-top p{
+  max-width: 495px;
+  margin-right: auto;
+  margin-left: auto;
+}
 
 /*****/
 
@@ -133,6 +144,20 @@ header, section, footer {
 
 .advantages-bg:last-child{
   background-image: url('../img/index/second-reason.jpg');
+}
+
+.booking-top h2{
+  max-width: 305px;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.booking-top p{
+  max-width: 442px;
+  margin-bottom: 50px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .map{
@@ -202,6 +227,7 @@ header, section, footer {
   margin-right: 18px;
 }
 .form-row input{
+  padding-left: 12px;
   border: none;
   background-color:#f2f2f2;
 }
@@ -214,6 +240,7 @@ header, section, footer {
 .form-half input{
   width: 32px;
   text-align: center;
+  padding-left: 0px;
 }
 .form-half label{
   display: inline-block;
@@ -420,6 +447,7 @@ h2,.hashtag,.map-headBtn{
   border: 2px solid #ffffff;
   border-radius: 2px;
 }
+
 .price-controls::after {
   content: '';
   position: absolute;
@@ -431,6 +459,7 @@ h2,.hashtag,.map-headBtn{
   background: #ffffff;
   transform: translate(-50%, -50%);
 }
+
 .price-controls label {
   display: inline-block;
 
@@ -440,12 +469,14 @@ h2,.hashtag,.map-headBtn{
 
   cursor: pointer;
 }
+
 .price-controls .min-price,
 .price-controls .max-price {
   box-sizing: content-box;
-  width: 90px;
-  padding-left: 65px;
+  width: 50%;
+  line-height: 30px;
 }
+
 .price-controls input {
   width: 50px;
   color: inherit;
@@ -474,12 +505,9 @@ h2,.hashtag,.map-headBtn{
 .range-toggle {
   position: absolute;
   top: -9px;
-  width: 4px;
-  height: 4px;
-  background: #ababab;
-  border: 8px solid #ffffff;
-  border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  width: 20px;
+  height: 23px;
+  background-image :url('../img/catalog/filter-button.svg');
   cursor: pointer;
 }
 
@@ -562,11 +590,13 @@ input[type='checkbox']:checked ~ .catalog-checkbox{
 
 .c-hotels-top h3{
   display: inline-block;
+  font-size: 21px;
   vertical-align: middle;
 }
 
 .c-hotels-top h4{
   display: inline-block;
+  font-size: 12px;
   vertical-align: middle;
 }
 
@@ -593,11 +623,7 @@ input[type='checkbox']:checked ~ .catalog-checkbox{
   height:15px;
   vertical-align: top;
   margin-top:23px;
-  color: #cacaca;
-}
 
-.arrows a:active{
-  color: #81b3d2;
 }
 
 .arrows a:first-child{
@@ -614,7 +640,9 @@ input[type='checkbox']:checked ~ .catalog-checkbox{
 
 .c-hotels-top-button{
   vertical-align: middle;
-  margin-right: 30px;
+  text-transform: uppercase;
+  padding: 0px;
+  margin-right: 32px;
   color:rgba(0, 0, 0, 0.3);
   border: 0px solid #fff;
   border-bottom: 1px dotted #81b3d2;
@@ -624,10 +652,6 @@ input[type='checkbox']:checked ~ .catalog-checkbox{
 .c-hotels-top-button:hover{
   color: #81b3d2;
   border-style: none;
-}
-
-.arrows a:hover{
-  color:#81b3d2;
 }
 
 .c-hotels-row{
