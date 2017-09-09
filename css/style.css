@@ -511,10 +511,6 @@ h2,.hashtag,.map-headBtn{
   cursor: pointer;
 }
 
-.range-toggle:hover {
-  background: #1c4f80;
-}
-
 .range-toggle-min {
   left: 0;
 }
