@@ -1,182 +1,191 @@
 <!DOCTYPE html>
 <html lang='ru'>
-  <head>
-    <meta charset='utf-8'>
-    <link rel='stylesheet' href='css/normalize.css' type='text/css'/>
-    <link rel='stylesheet' href='css/style.css' type='text/css'/>
-    <title>HTML Academy: Седона</title>
-  </head>
+<head>
+  <meta charset='utf-8'>
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic' rel='stylesheet'>
+  <link rel='stylesheet' href='css/normalize.css' type='text/css'/>
+  <link rel='stylesheet' href='css/style.css' type='text/css'/>
+  <title>HTML Academy: Седона</title>
+</head>
 
 <body>
-  <div class='wrapper'>
+<div class='wrapper'>
 
-    <header class='header'>
-      <nav class='nav'>
-          <ul>
-            <li><a href='#'>Информация</a></li>
-            <li><a href='#'>Фото и видео</a></li>
-          </ul>
-          <div class='logo-wrapper'>
-            <img src='img/header/Logo.png' alt='Логотип City of Sedona'>
+  <header class='header'>
+    <nav class='nav'>
+      <ul>
+        <li><a href='#' class='here'>Информация</a></li>
+        <li><a href='#'>Фото и видео</a></li>
+      </ul>
+      <div class='logo-wrapper'>
+        <a class='logo-ref' href='#'><img src='img/header/logo.png' width='138' height='70'
+                                          alt='Логотип City of Sedona'></a>
+      </div>
+      <ul>
+        <li><a href='#'>Карта штата</a></li>
+        <li><a href='catalog.html'>Гостиницы</a></li>
+      </ul>
+
+    </nav>
+
+    <div class='header-content'>
+
+      <img src='img/header/headers.png' width='458' height='352' alt=''>
+
+    </div>
+  </header>
+
+  <section class='advantages'>
+    <div class='advantages-top'>
+      <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+      <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+
+    </div>
+
+    <div class='advantages-row'>
+      <div class='advantages-col bluebg'>
+        <h3>Настоящий <br> городок</h3>
+        <p>- №1 -</p>
+        <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+      </div>
+      <div class='advantages-bg'></div>
+    </div>
+    <div class='advantages-row'>
+      <div class='advantages-col'>
+        <img src='img/index/icon-1.svg' width='75' height='72' alt=''>
+        <h3>Жилье</h3>
+        <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+      </div>
+      <div class='advantages-col'>
+        <img src='img/index/icon-3.svg' width='74' height='76' alt=''>
+        <h3>Еда</h3>
+        <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь</p>
+      </div>
+      <div class='advantages-col'>
+        <img src='img/index/icon-2.svg' width='64' height='76' alt=''>
+        <h3>Сувениры</h3>
+        <p>Не только китайского, но и местного производства!</p>
+      </div>
+
+    </div>
+    <div class='advantages-row'>
+      <div class='advantages-bg'></div>
+      <div class='advantages-col bluebg'>
+        <h3>Там есть <br> мост Дьявола</h3>
+        <p>- №2 -</p>
+        <p>Да, по нему можно пройти! Если, конечно, Вы осмелитесь</p>
+      </div>
+    </div>
+    <div class='advantages-row'>
+      <div class='advantages-col greybg'>
+        <h3>Небольшая <br> площадь</h3>
+        <p>- №3 -</p>
+        <p>Все достопримечательности находятся очень близко</p>
+      </div>
+      <div class='advantages-col greybg'>
+        <h3>Красивая <br> дорога</h3>
+        <p>- №4 -</p>
+        <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+      </div>
+      <div class='advantages-col greybg'>
+        <h3>Мало <br> туристов </h3>
+        <p>- №5 -</p>
+        <p>Большинство едет в Гранд Каньон и толпится там</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class='booking'>
+    <div class='booking-top'>
+      <h2>Заинтересовались?</h2>
+      <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <a href='main-form.html' class='map-headBtn brownbg'><span class='opa'>Поиск гостиницы в Седоне</span></a>
+      <!--По нажатию кнопки появляется вся форма/Код кнопки в js<сделано для критерия Д20-->
+
+    </div>
+
+    <div class='map'>
+      <iframe
+        src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26192.589054564876!2d-111.81264801128933!3d34.854377145288524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1505390107960'
+        width='100%' height='100%' frameborder='0' style='border:0' allowfullscreen></iframe>
+      <form class='form'>
+
+        <fieldset>
+          <div class='form-row'>
+            <label for='arrival'>
+              Дата заезда:
+            </label>
+            <div class='form-calendar-wrapper'>
+              <input id='arrival' type='text' value='24 АПРЕЛЯ 2017'>
+              <a title='Дата' class='form-icon calendar'>  <!--картинка календаря на бекграунде--></a>
+            </div>
           </div>
-          <ul>
-            <li><a href='#'>Карта штата</a></li>
-            <li><a href='#'>Гостиницы</a></li>
+          <div class='form-row'>
+            <label for='departure'>
+              Дата выезда:
+            </label>
+            <div class='form-calendar-wrapper'>
+              <input id='departure' type='text' value='4 ИЮЛЯ 2017'>
+              <a title='Дата' class='form-icon calendar'></a>
+            </div>
+          </div>
+          <div class='form-row'>
+
+            <div class='form-half'>
+              <label for='adult'>
+                Взрослые:
+              </label>
+              <div class='form-number'>
+                <button title='Минус' class='form-icon minus' id='minus1' href=''></button>
+                <input id='adult' type='text' value='2'>
+                <button title='Плюс' class='form-icon plus' id='plus1' href='#'></button>
+              </div>
+            </div>
+
+            <div class='form-half'>
+              <label for='child'>
+                Дети:
+              </label>
+              <div class='form-number'>
+                <button title='Минус' class='form-icon minus' id='minus2' href=''></button>
+                <input id='child' type='text' value='0'>
+                <button title='Плюс' class='form-icon plus' id='plus2' href='#'></button>
+              </div>
+            </div>
+
+          </div>
+          <button class='map-confirmBtn bluebg'>
+            <span class='opa'>Найти</span>
+          </button>
+
+        </fieldset>
+      </form>
+      <footer class='footer'>
+
+        <div class='footer-left'>
+          <p class='hashtag'>#VISITSEDONA</p>
+        </div>
+
+        <div class='footer-center'>
+          <ul class='refs'>
+            <li class='refs-item bluebg'><a class='opa' title='Twitter' href='#'></a></li>
+            <li class='refs-item bluebg'><a class='opa' title='Facebook' href='#'></a></li>
+            <li class='refs-item bluebg'><a class='opa' title='Youtube' href='#'></a></li>
           </ul>
-
-      </nav>
-
-      <div class='header-content'>
-
-        <img src='img/header/headers.png' alt=''>
-
-      </div>
-    </header>
-
-    <section class='advantages'>
-      <div class='advantages-top'>
-        <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-
-      </div>
-
-      <div class='advantages-row'>
-        <div class='advantages-col bluebg'>
-          <h3>Настоящий городок</h3>
-          <p>-№1-</p>
-          <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
-        </div>
-        <div class='advantages-bg'></div>
-      </div>
-      <div class='advantages-row'>
-        <div class='advantages-col'>
-          <img src='img/index/icon-1.svg' alt=''>
-          <h3>Жилье</h3>
-          <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-        </div>
-        <div class='advantages-col'>
-          <img src='img/index/icon-2.svg' alt=''>
-          <h3>Еда</h3>
-          <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь</p>
-        </div>
-        <div class='advantages-col'>
-          <img src='img/index/icon-3.svg' alt=''>
-          <h3>Сувениры</h3>
-          <p>Не только китайского, но и местного производства!</p>
         </div>
 
-      </div>
-      <div class='advantages-row'>
-        <div class='advantages-bg'></div>
-        <div class='advantages-col bluebg'>
-          <h3>Там есть мост Дьявола</h3>
-          <p>-№2-</p>
-          <p>Да, по нему можно пройти! Если, конечно, Вы осмелитесь</p>
-        </div>
-      </div>
-      <div class='advantages-row'>
-        <div class='advantages-col greybg'>
-          <h3>Небольшая площадь</h3>
-          <p>-№3-</p>
-          <p>Все достопримечательности находятся очень близко</p>
-        </div>
-        <div class='advantages-col greybg'>
-          <h3>Красивая дорога</h3>
-          <p>-№4-</p>
-          <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-        </div>
-        <div class='advantages-col greybg'>
-          <h3>Мало туристов </h3>
-          <p>-№5-</p>
-          <p>Большинство едет в Гранд Каньон и толпится там</p>
+        <div class='footer-right'>
+          <p>Website by</p>
+          <a title='HTMLAcademy' class='copyright' href='https://htmlacademy.ru/intensive/htmlcss'></a>
         </div>
 
-      </div>
-    </section>
+      </footer>
+    </div>
+  </section>
 
-    <section class='booking'>
-      <div class='booking-top'>
-        <h2>Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button class='map-headBtn brownbg'>Поиск гостиницы в Седоне</button>
-        <!--По нажатию кнопки появляется вся форма-->
-
-      </div>
-
-      <div class='map'>
-          <form class='form'>
-
-            <fieldset>
-            <div class='form-row'>
-              <label for='arrival'>
-                Дата заезда:
-              </label>
-              <div class='form-calendar-wrapper'>
-                <input id='arrival' type='text' value='24 АПРЕЛЯ 2017'>
-                <a class='form-icon calendar'>  <!--картинка календаря на бекграунде--></a>
-              </div>
-            </div>
-            <div class='form-row'>
-              <label for='departure'>
-                  Дата выезда:
-              </label>
-              <div class='form-calendar-wrapper'>
-                <input id='departure' type='text' value='4 ИЮЛЯ 2017'>
-                <a class='form-icon calendar'></a>
-              </div>
-            </div>
-            <div class='form-row'>
-
-              <div class='form-half'>
-                  <label for='adult'>
-                    Взрослые:
-                  </label>
-                  <div class='form-number'>
-                      <a class='form-icon minus' href=''></a><input id='adult' type='text' value='2'><a class='form-icon plus' href='#'></a>
-                  </div>
-              </div>
-
-              <div class='form-half'>
-                  <label for='child'>
-                    Дети:
-                  </label>
-                  <div class='form-number'>
-                      <a class='form-icon minus' href=''></a><input id='child' type='text' value='0'><a class='form-icon plus' href='#'></a>
-                  </div>
-              </div>
-
-            </div>
-            <button class='map-confirmBtn bluebg'>
-                Найти
-            </button>
-
-            </fieldset>
-          </form>
-          <footer class='footer'>
-
-            <div class='footer-left'>
-              <p class='hashtag'>#VISITSEDONA</p>
-            </div>
-
-            <div class='footer-center'>
-              <ul class='refs'>
-                <li class='refs-item bluebg'><a href='#'></a></li>
-                <li class='refs-item bluebg'><a href='#'></a></li>
-                <li class='refs-item bluebg'><a href='#'></a></li>
-              </ul>
-            </div>
-
-            <div class='footer-right'>
-              <p>Website by</p>
-              <a class='copyright' href='https://htmlacademy.ru/intensive/htmlcss'><img src='img/footer/logo-htmlacademy.svg' alt='Website by HTML Academy'></a>
-            </div>
-
-          </footer>
-      </div>
-    </section>
-
-  </div>
-
+</div>
+<script src='js/script.min.js'></script>
 </body>
 
 </html>

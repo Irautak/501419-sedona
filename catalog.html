@@ -1,215 +1,231 @@
 <!DOCTYPE html>
 <html lang='ru'>
-  <head>
-    <meta charset='utf-8'>
-    <link rel='stylesheet' href='css/normalize.css' type='text/css'/>
-    <link rel='stylesheet' href='css/style.css' type='text/css'/>
-    <title>HTML Academy: Седона</title>
-  </head>
+<head>
+  <meta charset='utf-8'>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel='stylesheet' href='css/normalize.css' type='text/css'/>
+  <link rel='stylesheet' href='css/style.min.css' type='text/css'/>
+  <title>HTML Academy: Седона</title>
+</head>
 
 <body>
-  <div class='wrapper'>
+<div class='wrapper'>
 
-    <header class='c-header'>
-      <nav class='nav'>
-          <ul>
-            <li><a href='#'>Информация</a></li>
-            <li><a href='#'>Фото и видео</a></li>
-          </ul>
-          <div class='logo-wrapper'>
-            <a class='logo-ref' href='index.html'><img src='img/header/Logo.png' alt='Логотип City of Sedona'></a>
-          </div>
-          <ul>
-            <li><a href='#'>Карта штата</a></li>
-            <li><a href='#'>Гостиницы</a></li>
-          </ul>
+  <header class='c-header'>
+    <nav class='nav'>
+      <ul>
+        <li><a href='index.html'>Информация</a></li>
+        <li><a href='#'>Фото и видео</a></li>
+      </ul>
+      <div class='logo-wrapper'>
+        <a class='logo-ref' href='index.html'><img src='img/header/logo.png' width='138' height='70'
+                                                   alt='Логотип City of Sedona'></a>
+      </div>
+      <ul>
+        <li><a href='#'>Карта штата</a></li>
+        <li><a href='#' class='here'>Гостиницы</a></li>
+      </ul>
 
-      </nav>
-      <form class='c-header-content'>
-        <fieldset class='c-header-content-left'>
-          <div class='c-header-infrastructure'>
+    </nav>
+    <form class='c-header-content'>
+      <div class='c-header-content-left'>
+        <div class='fieldset-wrapper'>
+          <fieldset class='c-header-infrastructure'>
             <h3>Инфраструктура:</h3>
-              <label class='catalog-label'><input type='checkbox' name='infr'   value='pool' checked><span class='catalog-checkbox'></span> Бассейн</label>
-              <label class='catalog-label'><input type='checkbox' name='infr2'  value='parking'><span class='catalog-checkbox'></span> Парковка</label>
-              <label class='catalog-label'><input type='checkbox' name='infr3'  value='wi-fi'><span class='catalog-checkbox'></span> Wi-fi</label>
-          </div>
-
-          <div class='c-header-house'>
-            <h3>Тип жилья:</h3>
-              <label class='catalog-label'><input type='checkbox' name='house'   value='hotel' checked ><span class='catalog-checkbox'></span> Гостиница</label>
-              <label class='catalog-label'><input type='checkbox' name='house2'  value='motel' checked ><span class='catalog-checkbox'></span> Мотель</label>
-              <label class='catalog-label'><input type='checkbox' name='house3'  value='apartments' checked><span class='catalog-checkbox'></span> Апартаменты</label>
-          </div>
+            <label class='catalog-label'><input type='checkbox' name='infr' value='pool' checked><span
+              class='catalog-checkbox'></span> Бассейн</label>
+            <label class='catalog-label'><input type='checkbox' name='infr2' value='parking'><span
+              class='catalog-checkbox'></span> Парковка</label>
+            <label class='catalog-label'><input type='checkbox' name='infr3' value='wi-fi'><span
+              class='catalog-checkbox'></span> Wi-fi</label>
           </fieldset>
+        </div>
 
-        <fieldset class='c-header-content-right'>
-            <h3>Стоимость в сутки(Р):</h3>
-            <div class='price-controls'>
-                <label class='min-price'>от <input type='text' name='min-price' value='0'></label>
-                <label class='max-price'>до <input type='text' name='max-price' value='3000'></label>
-            </div>
-            <div class='range-controls'>
-                <div class='scale'>
-                    <div class='bar'> </div>
-                </div>
-                <div class='range-toggle range-toggle-min'>
+        <div class='fieldset-wrapper'>
+          <fieldset class='c-header-house'>
+            <h3>Тип жилья:</h3>
+            <label class='catalog-label'><input type='checkbox' name='house' value='hotel' checked><span
+              class='catalog-checkbox'></span> Гостиница</label>
+            <label class='catalog-label'><input type='checkbox' name='house2' value='motel' checked><span
+              class='catalog-checkbox'></span> Мотель</label>
+            <label class='catalog-label'><input type='checkbox' name='house3' value='apartments' checked><span
+              class='catalog-checkbox'></span> Апартаменты</label>
+          </fieldset>
+        </div>
+      </div>
 
-                </div>
-                <div class='range-toggle range-toggle-max'>
+      <fieldset class='c-header-content-right'>
+        <h3>Стоимость в сутки (Р):</h3>
+        <div class='price-controls'>
+          <label class='min-price'>от <input type='text' name='min-price' value='0'></label>
+          <label class='max-price'>до <input type='text' name='max-price' value='3000'></label>
+        </div>
+        <div class='range-controls'>
+          <div class='scale'>
+            <div class='bar'></div>
+          </div>
+          <div class='range-toggle range-toggle-min'>
 
-                </div>
-            </div>
+          </div>
+          <div class='range-toggle range-toggle-max'>
 
-            <button class='c-right-btn' type='submit'>Показать</button>
-
-        </fieldset>
-
-
-      </form>
-
-    </header>
-
-
-    <section class='c-hotels'>
-      <div class='c-hotels-top'>
-        <div class='c-hotels-top-wrapper'>
-          <h3>Найдено:3</h3>
-
-          <div class='c-hotels-top-sort'>
-            <h4>Сортировка:</h4>
-            <ul>
-              <li><button class='c-hotels-top-button'>По цене</button></li>
-              <li><button class='c-hotels-top-button'>По типу</button></li>
-              <li><button class='c-hotels-top-button'>По рейтингу</button></li>
-            </ul>
           </div>
         </div>
 
-        <div class='arrows'>
+        <a href='form.html' class='c-right-btn'>Показать</a>
 
-          <a href='#'></a>
-          <a href='#'></a>
+      </fieldset>
 
+
+    </form>
+
+  </header>
+
+
+  <section class='c-hotels'>
+    <div class='c-hotels-top'>
+      <div class='c-hotels-top-wrapper'>
+        <h3>Найдено: 3</h3>
+
+        <div class='c-hotels-top-sort'>
+          <h4>Сортировка:</h4>
+          <ul>
+            <li>
+              <button class='c-hotels-top-button'>По цене</button>
+            </li>
+            <li>
+              <button class='c-hotels-top-button'>По типу</button>
+            </li>
+            <li>
+              <button class='c-hotels-top-button'>По рейтингу</button>
+            </li>
+          </ul>
         </div>
+      </div>
+
+      <div class='arrows'>
+
+        <a title='По возрастанию' href='#'></a>
+        <a title='По убыванию' href='#'></a>
 
       </div>
 
-      <div class='c-hotels-row'>
-
-        <div class='c-row-left'>
-          <div class='c-hotels-pic'>
-            <img src='img/catalog/first-hotel.jpg' alt=''>
-          </div>
-          <div class='c-left-notImg'>
-          <h2>Amara Resort and SPA</h2>
-          <div class='c-hotels-desc'>
-              <div class='c-hotels-more'>
-                <p class='catalog-desc'>Гостиница</p>
-                <a class='bluebg catalog-button' href='#'>Подробнее</a>
-              </div>
-              <div class='c-hotels-reserve'>
-                <p class='catalog-desc'>От 3500 Р.</p>
-                <a class='brownbg catalog-button' href='#'>Забронировать</a>
-          </div>
-        </div>
-          </div>
-        </div>
-        <div class='c-row-right'>
-          <div class='c-hotels-stars'>
-            <a href='#'></a>
-            <a href='#'></a>
-            <a href='#'></a>
-            <a href='#'></a>
-          </div>
-          <p class='c-hotels-rating'>Рейтинг:8,5</p>
-
-        </div>
-      </div>
-      <div class='c-hotels-row'>
-
-        <div class='c-row-left'>
-          <div class='c-hotels-pic'>
-            <img src='img/catalog/second-hotel.jpg' alt=''>
-          </div>
-          <div class='c-left-notImg'>
-          <h2>Desert Quail INN</h2>
-          <div class='c-hotels-desc'>
-              <div class='c-hotels-more'>
-                <p class='catalog-desc'>Мотель</p>
-                <a class='bluebg catalog-button' href='#'>Подробнее</a>
-              </div>
-              <div class='c-hotels-reserve'>
-                <p class='catalog-desc'>От 2000 Р.</p>
-                <a class='brownbg catalog-button' href='#'>Забронировать</a>
-              </div>
-          </div>
-          </div>
-        </div>
-        <div class='c-row-right'>
-          <div class='c-hotels-stars'>
-            <a href='#'></a>
-            <a href='#'></a>
-            <a href='#'></a>
-            <a href='#'></a>
-          </div>
-          <p class='c-hotels-rating'>Рейтинг:8,9</p>
-
-        </div>
-      </div>
-      <div class='c-hotels-row'>
-
-        <div class='c-row-left'>
-          <div class='c-hotels-pic'>
-            <img src='img/catalog/third-hotel.jpg' alt=''>
-          </div>
-          <div class='c-left-notImg'>
-          <h2>Villas at Poco Diablo</h2>
-          <div class='c-hotels-desc'>
-              <div class='c-hotels-more'>
-                <p class='catalog-desc'>Апартаменты</p>
-                <a class='bluebg catalog-button' href='#'>Подробнее</a>
-              </div>
-              <div class='c-hotels-reserve'>
-                <p class='catalog-desc'>От 4000 Р.</p>
-                <a class='brownbg catalog-button' href='#'>Забронировать</a>
-              </div>
-          </div>
-        </div>
-        </div>
-        <div class='c-row-right'>
-          <div class='c-hotels-stars'>
-            <a href='#'></a>
-            <a href='#'></a>
-            <a href='#'></a>
-            <a href='#'></a>
-          </div>
-          <p class='c-hotels-rating'>Рейтинг:9,2</p>
-
-        </div>
-      </div>
-    </section>
-
-    <footer class='footer'>
-
-      <div class='footer-left'>
-        <p class='hashtag'>#VISITSEDONA</p>
-      </div>
-
-      <div class='footer-center'>
-        <ul class='refs'>
-          <li class='refs-item bluebg'><a href='#'></a></li>
-          <li class='refs-item bluebg'><a href='#'></a></li>
-          <li class='refs-item bluebg'><a href='#'></a></li>
-        </ul>
-      </div>
-
-      <div class='footer-right'>
-        <p>Website by</p>
-        <a class='copyright' href='https://htmlacademy.ru/intensive/htmlcss'><img src='img/footer/logo-htmlacademy.svg' alt='Website by HTML Academy'></a>
-      </div>
-
-    </footer>
     </div>
-  </body>
+
+    <div class='c-hotels-row'>
+
+      <div class='c-row-left'>
+        <div class='c-hotels-pic'>
+          <img src='img/catalog/first-hotel.jpg' width='135' height='90' alt=''>
+        </div>
+        <div class='c-left-notImg'>
+          <a>Amara Resort & SPA</a>
+          <div class='c-hotels-desc'>
+            <div class='c-hotels-more'>
+              <p class='catalog-desc'>Гостиница</p>
+              <a class='bluebg catalog-button' href='#'><span class='opa'>Подробнее</span></a>
+            </div>
+            <div class='c-hotels-reserve'>
+              <p class='catalog-desc'>От 4000 Р.</p>
+              <a class='brownbg catalog-button' href='#'><span class='opa'>Забронировать</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='c-row-right'>
+        <div class='c-hotels-stars'>
+          <a href='#'></a>
+          <a href='#'></a>
+          <a href='#'></a>
+          <a href='#'></a>
+        </div>
+        <p class='c-hotels-rating'>Рейтинг: 8,5</p>
+
+      </div>
+    </div>
+    <div class='c-hotels-row'>
+
+      <div class='c-row-left'>
+        <div class='c-hotels-pic'>
+          <img src='img/catalog/second-hotel.jpg' width='135' height='90' alt=''>
+        </div>
+        <div class='c-left-notImg'>
+          <a>Desert Quail INN</a>
+          <div class='c-hotels-desc'>
+            <div class='c-hotels-more'>
+              <p class='catalog-desc'>Мотель</p>
+              <a class='bluebg catalog-button' href='#'><span class='opa'>Подробнее</span></a>
+            </div>
+            <div class='c-hotels-reserve'>
+              <p class='catalog-desc'>От 3000 Р.</p>
+              <a class='brownbg catalog-button' href='#'><span class='opa'>Забронировать</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='c-row-right'>
+        <div class='c-hotels-stars'>
+          <a href='#'></a>
+          <a href='#'></a>
+          <a href='#'></a>
+        </div>
+        <p class='c-hotels-rating'>Рейтинг: 8,9</p>
+
+      </div>
+    </div>
+    <div class='c-hotels-row'>
+
+      <div class='c-row-left'>
+        <div class='c-hotels-pic'>
+          <img src='img/catalog/third-hotel.jpg' width='135' height='90' alt=''>
+        </div>
+        <div class='c-left-notImg'>
+          <a>Villas at Poco Diablo</a>
+          <div class='c-hotels-desc'>
+            <div class='c-hotels-more'>
+              <p class='catalog-desc'>Апартаменты</p>
+              <a class='bluebg catalog-button' href='#'><span class='opa'>Подробнее</span></a>
+            </div>
+            <div class='c-hotels-reserve'>
+              <p class='catalog-desc'>От 2000 Р.</p>
+              <a class='brownbg catalog-button' href='#'><span class='opa'>Забронировать</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='c-row-right'>
+        <div class='c-hotels-stars'>
+          <a href='#'></a>
+          <a href='#'></a>
+        </div>
+        <p class='c-hotels-rating'>Рейтинг: 9,2</p>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class='footer'>
+
+    <div class='footer-left'>
+      <p class='hashtag'>#VISITSEDONA</p>
+    </div>
+
+    <div class='footer-center'>
+      <ul class='refs'>
+        <li class='refs-item bluebg'><a class='opa' title='Twitter' href='#'></a></li>
+        <li class='refs-item bluebg'><a class='opa' title='Facebook' href='#'></a></li>
+        <li class='refs-item bluebg'><a class='opa' title='Youtube' href='#'></a></li>
+      </ul>
+    </div>
+
+    <div class='footer-right'>
+      <p>Website by</p>
+      <a title='HTMLAcademy' class='copyright' href='https://htmlacademy.ru/intensive/htmlcss'></a>
+    </div>
+
+  </footer>
+</div>
+<script src='js/script.min.js'></script>
+</body>
 
 </html>
