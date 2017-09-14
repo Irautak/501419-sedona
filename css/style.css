@@ -177,15 +177,15 @@ header, section, footer {
 }
 
 .advantages-row:nth-of-type(3) {
-  padding-bottom: 12px;
+  padding-bottom: 14px;
 }
 
 .advantages-row:nth-of-type(4) {
-  padding-bottom: 35px;
+  padding-bottom: 0px;
 }
 
 .advantages-row:nth-of-type(5) .advantages-col {
-  padding-top: 0px;
+  padding-top: 34px;
 }
 
 .advantages-row:nth-of-type(5) h3 {
@@ -326,7 +326,7 @@ header, section, footer {
 
 .form-row:nth-of-type(3) {
   margin-top: 30px;
-  margin-bottom: 54px;
+  margin-bottom: 53px;
 }
 
 .form-row:first-of-type label, .form-row:nth-of-type(2) label {
