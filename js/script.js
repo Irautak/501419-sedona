@@ -41,13 +41,3 @@ if (minus1) {
   })
 }
 
-var catalogRightButton = document.querySelector('.c-right-btn');
-var catalogForm = document.querySelector('.c-header-content');
-
-if (catalogForm) {
-  catalogRightButton.addEventListener('click', function (e) {
-    e.preventDefault();
-    catalogForm.submit();
-  })
-}
-
