@@ -31,7 +31,7 @@ html {
 }
 
 body {
-  font-family: 'PT Sans', sans-serif, 'Arial', sans-serif;
+  font-family: 'PTSans', 'Arial', sans-serif;
   line-height: 1.5;
   font-size: 14px;
   text-transform: uppercase;
@@ -51,6 +51,10 @@ a {
   cursor: pointer;
 }
 
+.vis-hidden {
+  display: none;
+}
+
 .here {
   color: #766357;
 }
@@ -65,8 +69,7 @@ header, section, footer {
 
 /****/
 .wrapper {
-  min-width: 768px;
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
   box-shadow: 0 0 15px rgba(0, 0, 0, .2);
   background-color: #fff;
@@ -143,7 +146,7 @@ header, section, footer {
   width: 100%;
   height: 57px;
   background-image: url('../img/header/bg_after.png');
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
 }
@@ -199,8 +202,8 @@ header, section, footer {
 .advantages-col {
   padding-top: 25px;
   padding-bottom: 45px;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 5%;
+  padding-right: 5%;
   width: 33.33%;
 }
 
